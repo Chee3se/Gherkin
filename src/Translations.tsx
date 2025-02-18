@@ -13,15 +13,15 @@ export default function Translations() {
                 <TBody>
                     <Row head={"1"}>
                         <Data><span>Feature</span></Data>
-                        <Data><span>Funkcionalitāte</span></Data>
+                        <Data><span>Funkcionālā iezīme</span></Data>
                     </Row>
                     <Row head={"2"}>
                         <Data><span>Background</span></Data>
                         <Data><span>Konteksts</span></Data>
                     </Row>
                     <Row head={"3"}>
-                        <Data><span>Rule</span></Data>
-                        <Data><span>Noteikums</span></Data>
+                        <Data><span className="line-through">Rule</span></Data>
+                        <Data><span className="line-through">Noteikums</span></Data>
                     </Row>
                     <Row head={"4"}>
                         <Data><span>Scenario</span></Data>
@@ -29,7 +29,7 @@ export default function Translations() {
                     </Row>
                     <Row head={"5"}>
                         <Data><span>Scenario Outline</span></Data>
-                        <Data><span>Scenārija paraugs</span></Data>
+                        <Data><span>Scenārijs pēc parauga</span></Data>
                     </Row>
                     <Row head={"6"}>
                         <Data><span>Examples</span></Data>
