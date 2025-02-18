@@ -32,8 +32,8 @@ function App() {
         camera.position.set(0, 0, 15);
         camera.lookAt(0, 0, 0);
 
-        const cucumbers: Object3D[] = [];
-        let model: Object3D | null = null;
+        const cucumbers = [new THREE.Mesh()];
+        let model = new THREE.Scene();
 
         const loader = new GLTFLoader();
         loader.load('/cucumber.glb', (gltf: GLTF) => {
