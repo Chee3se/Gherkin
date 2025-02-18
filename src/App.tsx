@@ -66,7 +66,7 @@ function App() {
             cucumbers.push(cucumber);
         };
 
-        const spawnInterval = setInterval(addCucumber, 500);
+        const spawnInterval = setInterval(addCucumber, 100);
 
         const animate = () => {
             requestAnimationFrame(animate);
