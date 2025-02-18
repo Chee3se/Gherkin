@@ -2,7 +2,8 @@ import { useEffect } from 'react';
 import * as THREE from 'three';
 import { GLTF, GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import './App.css';
-import Translations from './Translations';
+import Main from './components/Main.tsx';
+import Navbar from './components/Navbar.tsx';
 
 function App() {
     useEffect(() => {
@@ -93,7 +94,8 @@ function App() {
 
     return (
         <>
-            <Translations />
+            <Navbar/>
+            <Main />
         </>
     );
 }

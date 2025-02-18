@@ -1,14 +1,13 @@
-import Table from "./Table.tsx";
-import THead from "./THead.tsx";
-import TBody from "./TBody.tsx";
-import Row from "./Row.tsx";
-import Data from "./Data.tsx";
+import Table from "./table/Table.tsx";
+import THead from "./table/THead.tsx";
+import TBody from "./table/TBody.tsx";
+import Row from "./table/Row.tsx";
+import Data from "./table/Data.tsx";
 
 export default function Translations() {
     return (
         <div className="p-8 max-w-4xl mx-auto relative z-10">
             <Table>
-                <caption className="text-2xl font-bold mb-4 text-gray-100">Gherkin termini</caption>
                 <THead />
                 <TBody>
                     <Row head={"1"}>
