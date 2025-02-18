@@ -39,7 +39,7 @@ function App() {
         const loader = new GLTFLoader();
         loader.load('/cucumber.glb', (gltf: GLTF) => {
             model = gltf.scene;
-            model.scale.set(50, 50, 50);
+            model.scale.set(100, 100, 100);
         });
 
         const addCucumber = () => {
@@ -65,7 +65,7 @@ function App() {
             cucumbers.push(cucumber);
         };
 
-        const spawnInterval = setInterval(addCucumber, 1000);
+        const spawnInterval = setInterval(addCucumber, 500);
 
         const animate = () => {
             requestAnimationFrame(animate);
