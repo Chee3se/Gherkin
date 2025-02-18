@@ -29,12 +29,11 @@ function App() {
         directionalLight.position.set(5, 5, 5);
         scene.add(directionalLight);
 
-        // Wider camera view
         camera.position.set(0, 0, 15);
         camera.lookAt(0, 0, 0);
 
-        const cucumbers: THREE.Group[] = [];
-        let model: THREE.Group | null = null;
+        const cucumbers: Object3D[] = [];
+        let model: Object3D | null = null;
 
         const loader = new GLTFLoader();
         loader.load('/cucumber.glb', (gltf: GLTF) => {
@@ -46,21 +45,18 @@ function App() {
             if (!model) return;
 
             const cucumber = model.clone();
-            // Wider spawn area
             cucumber.position.set(
                 Math.random() * 24 - 12,
                 15,
-                Math.random() * 2 - 1 // Small depth variation
+                Math.random() * 2 - 1
             );
 
-            // Random rotation
             cucumber.rotation.set(
                 Math.random() * Math.PI,
                 Math.random() * Math.PI,
                 Math.random() * Math.PI
             );
 
-            // Random size between 60% and 100% of original
             const scale = 30 + Math.random() * 20;
             cucumber.scale.set(scale, scale, scale);
 
