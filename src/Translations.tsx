@@ -55,6 +55,10 @@ export default function Translations() {
                         <Data><span>But</span></Data>
                         <Data><span>Bet</span></Data>
                     </Row>
+                    <Row head={"12"}>
+                        <Data><span>Or</span></Data>
+                        <Data><span>Vai</span></Data>
+                    </Row>
                 </TBody>
             </Table>
         </div>
